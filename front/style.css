@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+body nav .nav_top {
+  height: 40px;
+  background-color: #78a43c;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body nav .nav_top .square {
+  border: 3.1px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 20px;
+  width: 20px;
+  margin: auto;
+}
+
+body nav .sign {
+  height: 48px;
+  background-color: #ffffff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom: 1px solid #d3d3d3;
+  -webkit-box-shadow: 0px 3px 5px #c2c2c2;
+          box-shadow: 0px 3px 5px #c2c2c2;
+}
+
+body nav .sign button {
+  width: 110px;
+  height: 46px;
+  border: 0;
+  background-color: #ffffff;
+}
+
+body nav .sign button.active {
+  border-bottom: 4px solid #78a43c;
+}
+
+body nav .sign button:focus {
+  background-color: #e68b00;
+  color: #ffffff;
+}
+
+body .info-section {
+  background-color: #ebebeb;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .info-section .title {
+  margin-top: 86px;
+}
+
+body .info-section form {
+  margin: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+body .info-section form svg {
+  position: absolute;
+  right: 7px;
+  top: 27px;
+  width: 20px;
+}
+
+body .info-section form .relative {
+  position: relative;
+}
+
+body .info-section form input {
+  margin-top: 20px;
+  border: 0;
+  height: 36px;
+  width: 300px;
+  padding: 1px 35px 1px 5px;
+}
+
+body .info-section form a {
+  margin-left: 169px;
+  margin-top: 5px;
+  color: #000000;
+}
+
+body .info-section form button.submit {
+  margin-top: 40px;
+  margin-bottom: 80px;
+  border: 0px;
+  background-color: #78a43c;
+  width: 92px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #ffffff;
+  border-radius: 29px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 27px;
+}
+
+body .info-section form button.submit:hover {
+  background-color: #e68b00;
+}
+
+body .info-section form button.forget {
+  border: 0;
+  border-bottom: 1px solid #000000;
+  margin-left: 169px;
+  margin-top: 5px;
+}
+
+body .info-section form .SvGFocusColor {
+  fill: #e68b00;
+}
+
+body footer {
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+
+body footer .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 300px;
+  margin: auto;
+}
+
+body footer .icons svg {
+  width: 22px;
+  margin: auto;
+  fill: #949493;
+}
+
+body footer .icons svg:hover {
+  fill: #e68b00;
+}
+
+body footer .details .option {
+  border: 0;
+  background-color: #ffffff;
+  margin-top: 10px;
+  text-align: center;
+  color: #c2c2c2;
+}
+
+body footer .details .option span {
+  cursor: pointer;
+}
+
+body footer .details .option span:hover {
+  color: #000000;
+}
+/*# sourceMappingURL=style.css.map */
