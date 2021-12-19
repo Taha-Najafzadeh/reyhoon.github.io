@@ -149,10 +149,74 @@ body .info-section form input {
   padding: 1px 35px 1px 5px;
 }
 
-body .info-section form a {
-  margin-left: 169px;
-  margin-top: 5px;
-  color: #000000;
+body .info-section form .checkbox {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+body .info-section form .checkbox .styled-checkbox {
+  position: absolute;
+  opacity: 0;
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  top: 22px;
+  height: 1px;
+  right: 22px;
+}
+
+body .info-section form .checkbox .styled-checkbox + label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+body .info-section form .checkbox .styled-checkbox + label:before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: white;
+}
+
+body .info-section form .checkbox .styled-checkbox:hover + label:before {
+  background: #ffe9c7;
+}
+
+body .info-section form .checkbox .styled-checkbox:checked + label:before {
+  background: #e68b00;
+}
+
+body .info-section form .checkbox .styled-checkbox:checked + label:after {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 9px;
+  background: white;
+  width: 2px;
+  height: 2px;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+body .info-section form .checkbox .text {
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+body .info-section form .checkbox .text a {
+  margin: 0;
+  text-decoration: none;
+  color: blue;
 }
 
 body .info-section form button.submit {
