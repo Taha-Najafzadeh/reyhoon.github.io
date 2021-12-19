@@ -1,32 +1,32 @@
-@font-face {
- font-family: Vazir;
- font-style: normal;
- font-weight: normal;
- src: url('fonts/Vazir.eot');
- src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
- url('fonts/Vazir.woff2') format('woff2'), 
- url('fonts/Vazir.woff') format('woff'), 
- url('fonts/Vazir.ttf') format('truetype');
-}
-@font-face {
- font-family: Vazir;
- font-style: normal;
- font-weight: bold;
- src: url('fonts/Vazir-Bold.eot');
- src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
- url('fonts/Vazir-Bold.woff2') format('woff2'), 
- url('fonts/Vazir-Bold.woff') format('woff'), 
- url('fonts/Vazir-Bold.ttf') format('truetype');
-}
-
-body{
-font-family: 'Vazir', Arial, sans-serif;
-font-weight:normal;
-}
-
 * {
   padding: 0;
   margin: 0;
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: normal;
+  src: url("fonts/Vazir.eot");
+  src: url("fonts/Vazir.eot?#iefix") format("embedded-opentype"), url("fonts/Vazir.woff2") format("woff2"), url("fonts/Vazir.woff") format("woff"), url("fonts/Vazir.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: Vazir;
+  font-style: normal;
+  font-weight: bold;
+  src: url("fonts/Vazir-Bold.eot");
+  src: url("fonts/Vazir-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Vazir-Bold.woff2") format("woff2"), url("fonts/Vazir-Bold.woff") format("woff"), url("fonts/Vazir-Bold.ttf") format("truetype");
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Vazir', Arial, sans-serif;
+  font-weight: normal;
+  font-size: 1.6rem;
 }
 
 input:focus,
@@ -79,6 +79,7 @@ body nav .sign button {
   height: 46px;
   border: 0;
   background-color: #ffffff;
+  color: #686868;
 }
 
 body nav .sign button.active {
@@ -86,7 +87,7 @@ body nav .sign button.active {
 }
 
 body nav .sign button:focus {
-  background-color: #e68b00;
+  background-color: #a6cc70;
   color: #ffffff;
 }
 
@@ -109,6 +110,8 @@ body .info-section {
 
 body .info-section .title {
   margin-top: 86px;
+  font-size: 2.5rem;
+  color: #686868;
 }
 
 body .info-section form {
@@ -179,6 +182,12 @@ body .info-section form button.forget {
   border-bottom: 1px solid #000000;
   margin-left: 169px;
   margin-top: 5px;
+  color: #686868;
+  font-size: 1.4rem;
+}
+
+body .info-section form button.forget:hover {
+  color: #000000;
 }
 
 body .info-section form .SvGFocusColor {
@@ -196,15 +205,22 @@ body footer .icons {
   display: flex;
   width: 300px;
   margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-body footer .icons svg {
+body footer .icons a {
+  margin: auto;
+}
+
+body footer .icons a svg {
   width: 22px;
   margin: auto;
   fill: #949493;
 }
 
-body footer .icons svg:hover {
+body footer .icons a svg:hover {
   fill: #e68b00;
 }
 
@@ -216,11 +232,13 @@ body footer .details .option {
   color: #c2c2c2;
 }
 
-body footer .details .option span {
+body footer .details .option a {
   cursor: pointer;
+  text-decoration: none;
+  color: #686868;
 }
 
-body footer .details .option span:hover {
+body footer .details .option a:hover {
   color: #000000;
 }
 /*# sourceMappingURL=style.css.map */

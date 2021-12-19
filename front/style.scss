@@ -1,4 +1,5 @@
 $green: #78a43c;
+$green_light: #a6cc70;
 $white: #ffffff;
 $gray_border: #d3d3d3;
 $gray_shadow: #c2c2c2;
@@ -6,11 +7,41 @@ $bg_gray: #ebebeb;
 $black: #000000;
 $social_icons: #949493;
 $orange_active: #e68b00;
+$gray_text:#686868;
 
 
 *{
     padding: 0;
     margin: 0;
+}
+
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/Vazir.eot');
+    src: url('fonts/Vazir.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir.woff2') format('woff2'), 
+    url('fonts/Vazir.woff') format('woff'), 
+    url('fonts/Vazir.ttf') format('truetype');
+}
+@font-face {
+    font-family: Vazir;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/Vazir-Bold.eot');
+    src: url('fonts/Vazir-Bold.eot?#iefix') format('embedded-opentype'), 
+    url('fonts/Vazir-Bold.woff2') format('woff2'), 
+    url('fonts/Vazir-Bold.woff') format('woff'), 
+    url('fonts/Vazir-Bold.ttf') format('truetype');
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: 'Vazir', Arial, sans-serif;
+    font-weight:normal;
+    font-size: 1.6rem;
 }
 input:focus,
 select:focus,
@@ -49,11 +80,12 @@ body{
                 height: 46px;
                 border: 0;
                 background-color: $white;
+                color: $gray_text;
                 &.active{
                     border-bottom: 4px solid $green;
                 }
                 &:focus{
-                    background-color: $orange_active;
+                    background-color: $green_light;
                     color: $white;
                     
                 }
@@ -69,6 +101,8 @@ body{
         align-items: center;
         .title{
             margin-top: 86px;
+            font-size: 2.5rem;
+            color: $gray_text;
         }
         form{
             margin: 30px 0;
@@ -118,6 +152,11 @@ body{
                 border-bottom: 1px solid $black;
                 margin-left: 169px;
                 margin-top: 5px;
+                color: $gray_text;
+                font-size: 1.4rem; 
+                &:hover{
+                    color: $black;
+                }
             }
             .SvGFocusColor{
                 fill: $orange_active;
@@ -131,12 +170,16 @@ body{
             display: flex;
             width: 300px;
             margin: auto;
-            svg{
-                width: 22px;
+            align-items: center;
+            a{
                 margin: auto;
-                fill: $social_icons;
-                &:hover{
-                    fill: $orange_active;
+                svg{
+                    width: 22px;
+                    margin: auto;
+                    fill: $social_icons;
+                    &:hover{
+                        fill: $orange_active;
+                    }
                 }
             }
         }
@@ -147,8 +190,10 @@ body{
                 margin-top: 10px;
                 text-align: center;
                 color: $gray_shadow;
-                span{
+                a{
                     cursor: pointer;
+                    text-decoration: none;
+                    color: $gray_text;
                     &:hover{
                         color: $black;
                     }
