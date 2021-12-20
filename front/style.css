@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+#form2 {
+ display : none;
+}
+
 @font-face {
   font-family: Vazir;
   font-style: normal;
@@ -693,7 +697,7 @@ body nav .sign button.active {
   border-bottom: 4px solid #78a43c;
 }
 
-body nav .sign button:focus {
+body nav .sign button:hover {
   background-color: #a6cc70;
   color: #ffffff;
 }
@@ -809,8 +813,18 @@ body .info-section form .checkbox .styled-checkbox:checked + label:after {
   background: white;
   width: 2px;
   height: 2px;
-  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
-          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+  -webkit-box-shadow: 2px 0 0 white,
+ 4px 0 0 white,
+ 4px -2px 0 white,
+ 4px -4px 0 white,
+ 4px -6px 0 white,
+ 4px -8px 0 white;
+          box-shadow: 2px 0 0 white,
+ 4px 0 0 white,
+ 4px -2px 0 white,
+ 4px -4px 0 white,
+ 4px -6px 0 white,
+ 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -832,6 +846,7 @@ body .info-section form button.submit {
   border: 0px;
   background-color: #78a43c;
   width: 92px;
+  padding-top: 2px;
   height: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
