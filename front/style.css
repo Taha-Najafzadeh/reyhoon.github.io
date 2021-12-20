@@ -90,7 +90,7 @@ body nav .sign button.active {
   border-bottom: 4px solid #78a43c;
 }
 
-body nav .sign button:focus {
+body nav .sign button:hover {
   background-color: #a6cc70;
   color: #ffffff;
 }
