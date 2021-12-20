@@ -14,30 +14,28 @@
             <div class="square"></div>
         </div>
         <div class="sign text-primary">
-                <button class="active">
+                <button id="signin" class="active">
                     ورود
                 </button>
-                <button>
+                <button id="signup">
                     ثبت نام
                 </button>
         </div>
     </nav>
-    <div class="info-section">
+    <div id="form1">
+    <div  class="info-section">
         <div class="title">
             ورود
         </div>
-        <form action="POST">
+        <form action="POST" >
             <div class="relative">
                 <input type="text" placeholder="ایمیل یا شماره تلفن" id="Email" onclick="myFunction()">
                 <svg id="EmailIcon" fill="#808080" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"/></svg>
             </div>
             <div class="relative">
                 <input type="password" placeholder="رمز عبور" id="Password">
-                <?xml version="1.0" encoding="iso-8859-1"?>
-                 <svg id="PasswordIcon" fill="#808080" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 <svg id="PasswordIcon" fill="#808080" version="1.1" id="Layer_1" x="0px" y="0px"
                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-                <g>
-                    <g>
                         <g>
                             <path d="M271.834,320.006h-31.659c-3.051,0-5.504,2.453-5.504,5.483v53.035c0,3.029,2.453,5.483,5.504,5.483h31.659
                                 c3.051,0,5.504-2.453,5.504-5.483v-53.035C277.338,322.46,274.884,320.006,271.834,320.006z"/>
@@ -47,38 +45,6 @@
                                 c-26.56,0-48.171-21.589-48.171-48.149v-53.013c0-26.56,21.611-48.171,48.171-48.171h31.659c26.56,0,48.171,21.611,48.171,48.171
                                 V378.517z M362.667,213.333H149.333v-64c0-58.816,47.851-106.667,106.667-106.667s106.667,47.851,106.667,106.667V213.333z"/>
                         </g>
-                    </g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
-                <g>
-                </g>
                 </svg>
             </div>
             <button href="/" class="forget">رمزمو یادم رفته</button>
@@ -86,7 +52,67 @@
                 ورود
             </button>
         </form>
+        </div>
+        </div>
+        <div id="form2">
+                <div class="info-section">
+        <div class="title">
+            ثبت نام
+        </div>
+        <form action="POST">
+            <div class="relative">
+                <input type="text" placeholder="نام کاربری" id="Person" onclick="myFunction()">
+                <svg id="PersonIcon" width="512px" fill="#808080"  viewBox="0 0 512 512"><path d="M332.64,64.58C313.18,43.57,286,32,256,32c-30.16,0-57.43,11.5-76.8,32.38-19.58,21.11-29.12,49.8-26.88,80.78C156.76,206.28,203.27,256,256,256s99.16-49.71,103.67-110.82C361.94,114.48,352.34,85.85,332.64,64.58Z"/><path d="M432,480H80A31,31,0,0,1,55.8,468.87c-6.5-7.77-9.12-18.38-7.18-29.11C57.06,392.94,83.4,353.61,124.8,326c36.78-24.51,83.37-38,131.2-38s94.42,13.5,131.2,38c41.4,27.6,67.74,66.93,76.18,113.75,1.94,10.73-.68,21.34-7.18,29.11A31,31,0,0,1,432,480Z"/></svg>
+            </div>
+            <div class="relative">
+                <input type="text" placeholder="ایمیل یا شماره تلفن" id="Email_up" onclick="myFunction()">
+                <svg id="EmailIcon_up" fill="#808080" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"/></svg>
+            </div>
+            <div class="relative">
+                <input type="password" placeholder="رمز عبور" id="Password_up" onclick="myFunction()">
+               <svg id="PasswordIcon_up" x="0px" y="0px" fill="#808080" viewBox="0 0 491.52 491.52" style="enable-background:new 0 0 491.52 491.52;" xml:space="preserve">
+	                <g>
+		<path d="M399.4,203.578h-19.801h-0.005v-69.744C379.593,60.039,319.556,0,245.759,0c-73.793,0-133.832,60.039-133.832,133.835
+			v69.744H92.122c-15.656,0-28.35,12.692-28.35,28.349v17.246v196.751v17.245c0,15.658,12.693,28.35,28.35,28.35H245.76H399.4
+			c15.656,0,28.348-12.692,28.348-28.35v-17.245V249.174v-17.246C427.748,216.27,415.056,203.578,399.4,203.578z M275.935,406.648
+			h-60.349l10.801-51.467c-10.101-6.428-16.848-17.652-16.848-30.512c0-20.003,16.218-36.219,36.221-36.219
+			c20.004,0,36.219,16.216,36.219,36.219c0,12.86-6.745,24.084-16.845,30.51L275.935,406.648z M331.84,203.578h-86.08h-86.075
+			h-0.005v-69.744c0-47.469,38.613-86.081,86.08-86.081c47.469,0,86.08,38.613,86.08,86.081V203.578z"/>
+	</g>
+               </svg>
+
+            </div>
+            <div class="relative">
+                <input type="password" placeholder="رمز عبور" id="Password2" onclick="myFunction()">
+                 <svg id="PasswordIcon2" x="0px" y="0px" fill="#808080" viewBox="0 0 491.52 491.52" style="enable-background:new 0 0 491.52 491.52;" xml:space="preserve">
+	                <g>
+		<path d="M399.4,203.578h-19.801h-0.005v-69.744C379.593,60.039,319.556,0,245.759,0c-73.793,0-133.832,60.039-133.832,133.835
+			v69.744H92.122c-15.656,0-28.35,12.692-28.35,28.349v17.246v196.751v17.245c0,15.658,12.693,28.35,28.35,28.35H245.76H399.4
+			c15.656,0,28.348-12.692,28.348-28.35v-17.245V249.174v-17.246C427.748,216.27,415.056,203.578,399.4,203.578z M275.935,406.648
+			h-60.349l10.801-51.467c-10.101-6.428-16.848-17.652-16.848-30.512c0-20.003,16.218-36.219,36.221-36.219
+			c20.004,0,36.219,16.216,36.219,36.219c0,12.86-6.745,24.084-16.845,30.51L275.935,406.648z M331.84,203.578h-86.08h-86.075
+			h-0.005v-69.744c0-47.469,38.613-86.081,86.08-86.081c47.469,0,86.08,38.613,86.08,86.081V203.578z"/>
+	</g>
+               </svg>
+            </div>
+            <div class="checkbox">
+              <!-- <input class="" type="checkbox" value="" id="flexCheckDefault"> -->
+
+              <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+                <label for="styled-checkbox-1"></label>
+
+              <div class="text">
+                <a href="">قوانین</a>
+                را می پذیرم.
+            
+              </div>
+            </div>
+            <button type="submit" class="submit">
+                ثبت نام
+            </button>
+        </form>
     </div>
+        </div>
     <footer>
         <div class="icons">
             <a href="">
