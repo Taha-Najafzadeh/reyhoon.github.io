@@ -1,0 +1,6 @@
+
+Google Chrome	96.0.4664.110 (Official Build) (64-bit) (cohort: Stable)
+Revision	d5ef0e8214bc14c9b5bbf69a1515e431394c62a6-refs/branch-heads/4664@{#1283}
+OS	Windows 10 Version 1803 (Build 17134.1365)
+JavaScript	V8 9.6.180.21
+User Agent	Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36
