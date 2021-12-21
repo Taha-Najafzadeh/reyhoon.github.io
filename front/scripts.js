@@ -80,3 +80,22 @@ $( document ).ready( function() {
     $("#signin").removeClass("active");
   });
 });
+
+
+$( document ).ready( function() {
+  $( "#button_type_1" ).click( function() {
+    $( "#form_input1" ).hide( 100 );
+    $( "#form_input2" ).show( 100 );
+    $("#button_type_2").addClass("inactive");
+    $("#button_type_1").removeClass("inactive");
+  });
+});
+
+$( document ).ready( function() {
+  $( "#button_type_2" ).click( function() {
+    $( "#form_input2" ).hide( 100 );
+    $( "#form_input1" ).show( 100 );
+    $("#button_type_1").addClass("inactive");
+    $("#button_type_2").removeClass("inactive");
+  });
+});
