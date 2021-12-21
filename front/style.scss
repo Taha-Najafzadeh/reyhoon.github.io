@@ -15,6 +15,11 @@ $dark_purple:#58457c;
 $hover_purple: #482787;
 $blue: #1bb1e4;
 $hover_card: #ffb84d26;
+$red: #EA1E63;
+$orange_btn: #E69C3B;
+$orange_btn_dark: #d68a26;
+$green_btn: #3CA853;
+$green_btn_dark: #06661b;
 
 
 *{
@@ -107,7 +112,7 @@ body{
                     }
                     .search_box{
                         @media only screen and (max-width: 900px) {
-                            width: 320px;
+                            width: 310px;
                         }
                         font-size: 1.4rem;                    
                         margin: auto;
@@ -514,6 +519,221 @@ body{
            }
 
         }
+        &.shop{
+            .account{
+                position: fixed;
+                margin-top: 7px;
+                color: $white;
+                right: 140px;
+                font-weight: 100;
+                @media only screen and (max-width: 900px) {
+                right: 20px;
+                }
+            }
+            .bg_fixed{
+                background: url("./images/image_2021-12-20_11-13-57.png");
+                background-size: cover;
+                background-attachment: fixed;
+                height: 250px;
+                width: 100%;  
+                color: white;
+                .row{
+                    position: relative;
+                    height: 100vh;
+                }
+                
+                .logo{
+                    position: absolute;
+                    top: 80px;
+                    .search_box{
+                        @media only screen and (max-width: 900px) {
+                            width: 310px;
+                        }
+                        font-size: 1.4rem;                    
+                        margin: auto;
+                        margin-top: 40px;
+                        display: flex;
+                        flex-direction: column;
+                        width: 480px;
+                        .search{
+                            form{
+                                height: 50px;
+                                background-color: white;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 10px;
+                                button{
+                                    width: 30%;
+                                    border: 0;
+                                    height: 100%;
+                                    background-color: $orange_active;
+                                    color: $white;
+                                    font-size: 1.6rem;
+                                    position: relative;
+                                    padding-right: 8px;
+                                    svg{
+                                        width: 20px;
+                                        position: absolute;
+                                        right: 6px;
+                                        height: 20px;
+                                        top: 6px;
+                                        fill: white;
+                                    }
+                                    &:hover{
+                                        background-color: $green;
+                                        box-shadow: 0 0 3px $black;
+                                    }
+                                }
+                                input{
+                                    height: 100%;
+                                    width: 68%;
+                                    border: 0;
+                                    background-color: $gray_light;
+                                    padding: 0 8px;
+                                    &:focus{
+                                        box-shadow: 0 0 3px $black;
+                                    }
+                                    &#form_input2{
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                        .btns{
+                            display: flex;
+                            button{
+                                border: 0;
+                                width: 120px;
+                                background-color: $white;
+                                margin: 0;
+                                height: 30px;
+                                &.inactive{
+                                    background-color: $gray_border;
+                                }
+                                @media only screen and (max-width: 900px) {
+                                    width: 80px;
+                                }
+                                &:hover{
+                                    background-color: $bg_gray;
+                                    box-shadow: 0 0 3px $black;
+                                    border: 1px solid $gray_border;
+                                }
+                            }
+                        }
+                    }
+                }
+            }   
+            .shop_cards{
+                background-color: $gray_light;
+                padding: 30px 0;
+                &_flex{
+                    display: flex;
+                    justify-content: center;
+                }
+                &_card{
+                    width: 230px;
+                    background-color: #ffffff;
+                    height: 370px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 12px;
+                    margin:0 8px;
+                    margin-top: 10px;
+                    box-shadow: 0 0 5px $gray_shadow;
+                    @media only screen and (max-width: 991px) {
+                        order: 1;
+                    }
+                    &_img{
+                        width: 100%;
+                        img{
+                            width: 100%;
+                            height: 190px;
+                            border-radius: 25px;
+                            box-shadow: 0 0 5px $gray_shadow;
+                            border: 1px solid $gray_border;
+                        }
+                    }
+                    &_name{
+                        color: $black;
+                        font-weight: bold;
+                        font-size: 2.9rem;
+                        margin-top: 10px;
+
+                    }
+                    &_rate{
+                        margin-top: 10px;
+                        width: 120px;
+                        display: flex;
+                        justify-content: space-around;
+                        align-content: center;
+                        align-items: center;
+                        div{
+                            font-size: 1.2rem;
+                            color: $white;
+                            background-color: $red;
+                            margin-left: 3px;
+                            width: 20px;
+                            height: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 6px;
+                        }
+                        svg{
+                            width: 14px;
+                            height: 14px;
+                        }
+                    }
+                    &_adress{
+                        margin-top: 10px;
+                        color: $gray_shadow;
+                        font-size: 1.3rem;
+                    }
+                    &_btn{
+                        display: flex;
+                        border: 0;
+                        margin-top: 10px;
+                        div{
+                            width: 125px;
+                        }
+                        button{
+                            width: 120px;
+                            color: white;
+                            border: 0;
+                            height: 30px;
+                            border-radius: 25px;
+                            font-size: 1.3rem;
+                            &.orange_btn{
+                                background-color: $orange_btn;
+                                &:hover{
+                                    background-color: $orange_btn_dark;
+                                }
+                            }
+                            &.green_btn{
+                                background-color: $green_btn;
+                                &:hover{
+                                    background-color: $green_btn_dark;
+                                }
+                            }
+                            &:hover{
+                                box-shadow: 0 0 2px $black;
+                            }
+                        }
+                    }
+                }
+                &_card_big{
+                    width: 380px;
+                    @media only screen and (max-width: 991px) {
+                        order: 2;
+                    }
+                    @media only screen and (max-width: 480px) {
+                        width: 300px;
+                    }
+                }
+            }
+        }
     }
     .pp{
         height: 1000px;
@@ -527,6 +747,8 @@ body{
             width: 100%;    
             display: flex;
             align-content: center;
+            position: fixed;
+            z-index: 100;
     
             .square{
                 border: 3.1px solid white;

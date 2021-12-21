@@ -3,10 +3,6 @@
   margin: 0;
 }
 
-#form2 {
- display : none;
-}
-
 @font-face {
   font-family: Vazir;
   font-style: normal;
@@ -112,7 +108,7 @@ body section.home_page .bg_fixed .logo .search_box {
 
 @media only screen and (max-width: 900px) {
   body section.home_page .bg_fixed .logo .search_box {
-    width: 320px;
+    width: 310px;
   }
 }
 
@@ -641,6 +637,316 @@ body section.home_page .news svg {
   height: 100px;
 }
 
+body section.shop .account {
+  position: fixed;
+  margin-top: 7px;
+  color: #ffffff;
+  right: 140px;
+  font-weight: 100;
+}
+
+@media only screen and (max-width: 900px) {
+  body section.shop .account {
+    right: 20px;
+  }
+}
+
+body section.shop .bg_fixed {
+  background: url("./images/image_2021-12-20_11-13-57.png");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 250px;
+  width: 100%;
+  color: white;
+}
+
+body section.shop .bg_fixed .row {
+  position: relative;
+  height: 100vh;
+}
+
+body section.shop .bg_fixed .logo {
+  position: absolute;
+  top: 80px;
+}
+
+body section.shop .bg_fixed .logo .search_box {
+  font-size: 1.4rem;
+  margin: auto;
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 480px;
+}
+
+@media only screen and (max-width: 900px) {
+  body section.shop .bg_fixed .logo .search_box {
+    width: 310px;
+  }
+}
+
+body section.shop .bg_fixed .logo .search_box .search form {
+  height: 50px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+body section.shop .bg_fixed .logo .search_box .search form button {
+  width: 30%;
+  border: 0;
+  height: 100%;
+  background-color: #e68b00;
+  color: #ffffff;
+  font-size: 1.6rem;
+  position: relative;
+  padding-right: 8px;
+}
+
+body section.shop .bg_fixed .logo .search_box .search form button svg {
+  width: 20px;
+  position: absolute;
+  right: 6px;
+  height: 20px;
+  top: 6px;
+  fill: white;
+}
+
+body section.shop .bg_fixed .logo .search_box .search form button:hover {
+  background-color: #78a43c;
+  -webkit-box-shadow: 0 0 3px #000000;
+          box-shadow: 0 0 3px #000000;
+}
+
+body section.shop .bg_fixed .logo .search_box .search form input {
+  height: 100%;
+  width: 68%;
+  border: 0;
+  background-color: #f6f4f5;
+  padding: 0 8px;
+}
+
+body section.shop .bg_fixed .logo .search_box .search form input:focus {
+  -webkit-box-shadow: 0 0 3px #000000;
+          box-shadow: 0 0 3px #000000;
+}
+
+body section.shop .bg_fixed .logo .search_box .search form input#form_input2 {
+  display: none;
+}
+
+body section.shop .bg_fixed .logo .search_box .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body section.shop .bg_fixed .logo .search_box .btns button {
+  border: 0;
+  width: 120px;
+  background-color: #ffffff;
+  margin: 0;
+  height: 30px;
+}
+
+body section.shop .bg_fixed .logo .search_box .btns button.inactive {
+  background-color: #d3d3d3;
+}
+
+@media only screen and (max-width: 900px) {
+  body section.shop .bg_fixed .logo .search_box .btns button {
+    width: 80px;
+  }
+}
+
+body section.shop .bg_fixed .logo .search_box .btns button:hover {
+  background-color: #ebebeb;
+  -webkit-box-shadow: 0 0 3px #000000;
+          box-shadow: 0 0 3px #000000;
+  border: 1px solid #d3d3d3;
+}
+
+body section.shop .shop_cards {
+  background-color: #f6f4f5;
+  padding: 30px 0;
+}
+
+body section.shop .shop_cards_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body section.shop .shop_cards_card {
+  width: 230px;
+  background-color: #ffffff;
+  height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 12px;
+  margin: 0 8px;
+  margin-top: 10px;
+  -webkit-box-shadow: 0 0 5px #c2c2c2;
+          box-shadow: 0 0 5px #c2c2c2;
+}
+
+@media only screen and (max-width: 991px) {
+  body section.shop .shop_cards_card {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+body section.shop .shop_cards_card_img {
+  width: 100%;
+}
+
+body section.shop .shop_cards_card_img img {
+  width: 100%;
+  height: 190px;
+  border-radius: 25px;
+  -webkit-box-shadow: 0 0 5px #c2c2c2;
+          box-shadow: 0 0 5px #c2c2c2;
+  border: 1px solid #d3d3d3;
+}
+
+body section.shop .shop_cards_card_name {
+  color: #000000;
+  font-weight: bold;
+  font-size: 2.9rem;
+  margin-top: 10px;
+}
+
+body section.shop .shop_cards_card_rate {
+  margin-top: 10px;
+  width: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body section.shop .shop_cards_card_rate div {
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #EA1E63;
+  margin-left: 3px;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 6px;
+}
+
+body section.shop .shop_cards_card_rate svg {
+  width: 14px;
+  height: 14px;
+}
+
+body section.shop .shop_cards_card_adress {
+  margin-top: 10px;
+  color: #c2c2c2;
+  font-size: 1.3rem;
+}
+
+body section.shop .shop_cards_card_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  margin-top: 10px;
+}
+
+body section.shop .shop_cards_card_btn div {
+  width: 125px;
+}
+
+body section.shop .shop_cards_card_btn button {
+  width: 120px;
+  color: white;
+  border: 0;
+  height: 30px;
+  border-radius: 25px;
+  font-size: 1.3rem;
+}
+
+body section.shop .shop_cards_card_btn button.orange_btn {
+  background-color: #E69C3B;
+}
+
+body section.shop .shop_cards_card_btn button.orange_btn:hover {
+  background-color: #d68a26;
+}
+
+body section.shop .shop_cards_card_btn button.green_btn {
+  background-color: #3CA853;
+}
+
+body section.shop .shop_cards_card_btn button.green_btn:hover {
+  background-color: #06661b;
+}
+
+body section.shop .shop_cards_card_btn button:hover {
+  -webkit-box-shadow: 0 0 2px #000000;
+          box-shadow: 0 0 2px #000000;
+}
+
+body section.shop .shop_cards_card_big {
+  width: 380px;
+}
+
+@media only screen and (max-width: 991px) {
+  body section.shop .shop_cards_card_big {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body section.shop .shop_cards_card_big {
+    width: 300px;
+  }
+}
+
 body .pp {
   height: 1000px;
   width: 100%;
@@ -656,6 +962,8 @@ body nav .nav_top {
   display: flex;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: fixed;
+  z-index: 100;
 }
 
 body nav .nav_top .square {
@@ -697,7 +1005,7 @@ body nav .sign button.active {
   border-bottom: 4px solid #78a43c;
 }
 
-body nav .sign button:hover {
+body nav .sign button:focus {
   background-color: #a6cc70;
   color: #ffffff;
 }
@@ -813,18 +1121,8 @@ body .info-section form .checkbox .styled-checkbox:checked + label:after {
   background: white;
   width: 2px;
   height: 2px;
-  -webkit-box-shadow: 2px 0 0 white,
- 4px 0 0 white,
- 4px -2px 0 white,
- 4px -4px 0 white,
- 4px -6px 0 white,
- 4px -8px 0 white;
-          box-shadow: 2px 0 0 white,
- 4px 0 0 white,
- 4px -2px 0 white,
- 4px -4px 0 white,
- 4px -6px 0 white,
- 4px -8px 0 white;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -846,7 +1144,6 @@ body .info-section form button.submit {
   border: 0px;
   background-color: #78a43c;
   width: 92px;
-  padding-top: 2px;
   height: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
