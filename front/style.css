@@ -976,6 +976,7 @@ body nav .nav_top .square {
 }
 
 body nav .sign {
+  padding-top: 88px;
   height: 48px;
   background-color: #ffffff;
   width: 100%;
