@@ -65,8 +65,8 @@ $("#toTop").click(function() {
  });
 $( document ).ready( function() {
   $( "#signin" ).click( function() {
-    $( "#form2" ).hide( 100 );
-    $( "#form1" ).show( 100 );
+    $( "#form2" ).fadeOut(300);
+    $( "#form1" ).fadeIn(300);
     $("#signin").addClass("active");
     $("#signup").removeClass("active");
   });
@@ -74,8 +74,8 @@ $( document ).ready( function() {
 
 $( document ).ready( function() {
   $( "#signup" ).click( function() {
-    $( "#form1" ).hide( 100 );
-    $( "#form2" ).show( 100 );
+    $( "#form1" ).fadeOut(300);
+    $( "#form2" ).fadeIn(300);
     $("#signup").addClass("active");
     $("#signin").removeClass("active");
   });
