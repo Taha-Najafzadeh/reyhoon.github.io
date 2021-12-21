@@ -23,7 +23,6 @@ html {
   font-size: 10px;
 }
 
-
 body {
   font-family: 'Vazir', Arial, sans-serif;
   font-weight: normal;
@@ -1007,7 +1006,7 @@ body nav .sign button.active {
   border-bottom: 4px solid #78a43c;
 }
 
-body nav .sign button:focus {
+body nav .sign button:hover {
   background-color: #a6cc70;
   color: #ffffff;
 }
@@ -1123,18 +1122,8 @@ body .info-section form .checkbox .styled-checkbox:checked + label:after {
   background: white;
   width: 2px;
   height: 2px;
-  -webkit-box-shadow: 2px 0 0 white,
- 4px 0 0 white,
- 4px -2px 0 white,
- 4px -4px 0 white,
- 4px -6px 0 white,
- 4px -8px 0 white;
-          box-shadow: 2px 0 0 white,
- 4px 0 0 white,
- 4px -2px 0 white,
- 4px -4px 0 white,
- 4px -6px 0 white,
- 4px -8px 0 white;
+  -webkit-box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+          box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
@@ -1237,23 +1226,28 @@ body footer .details .option a:hover {
   color: #000000;
 }
 
-.nav-menu * {
+body .nav-menu * {
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
-.nav-menu > ul > li {
+body .nav-menu > ul > li {
   position: relative;
   white-space: nowrap;
 }
 
-.nav-menu a {
+body .nav-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #45505b;
   padding: 10px 18px;
   margin-bottom: 8px;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
   font-size: 15px;
   border-radius: 50px;
@@ -1264,54 +1258,55 @@ body footer .details .option a:hover {
   transition: 0.3s;
 }
 
-.nav-menu a i {
+body .nav-menu a i {
   font-size: 20px;
 }
 
-.nav-menu a span {
+body .nav-menu a span {
   padding: 0 5px 0 7px;
   color: #45505b;
 }
 
 @media (min-width: 992px) {
-  .nav-menu a {
+  body .nav-menu a {
     width: 56px;
   }
-  .nav-menu a span {
+  body .nav-menu a span {
     display: none;
     color: #fff;
   }
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
+body .nav-menu a:hover, body .nav-menu .active > a, body .nav-menu li:hover > a {
   color: #fff;
   background: #78A43C;
 }
 
-.nav-menu a:hover span, .nav-menu .active > a span, .nav-menu li:hover > a span {
+body .nav-menu a:hover span, body .nav-menu .active > a span, body .nav-menu li:hover > a span {
   color: #fff;
 }
 
-.nav-menu a:hover, .nav-menu li:hover > a {
+body .nav-menu a:hover, body .nav-menu li:hover > a {
   width: 100%;
   color: #fff;
 }
 
-.nav-menu a:hover span, .nav-menu li:hover > a span {
+body .nav-menu a:hover span, body .nav-menu li:hover > a span {
   display: block;
 }
 
-.nav-menu{
-    position: fixed;
-    left: 50px;
-    top: 30%;
-    direction: ltr;
-    
+body .nav-menu {
+  position: fixed;
+  left: 50px;
+  top: 30%;
+  direction: ltr;
 }
 
-.nav-menu a, u {
+body .nav-menu a, body u {
   text-decoration: none;
 }
 
-
+body #form2 {
+  display: none;
+}
 /*# sourceMappingURL=style.css.map */
