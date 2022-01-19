@@ -38,14 +38,12 @@ button:focus {
 
 body #toTop {
   color: #fff;
-  background-color: #c2c2c2;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
   position: fixed;
   bottom: 30px;
   left: 30px;
   display: none;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 body #toTop svg {
@@ -253,6 +251,7 @@ body section.home_page .offer_text .cards {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 50px;
+  padding-bottom: 60px;
 }
 
 body section.home_page .offer_text .cards .card_s {

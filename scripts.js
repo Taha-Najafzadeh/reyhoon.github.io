@@ -53,10 +53,10 @@ $("#Scrol_svg").click(function() {
 });
 
 $(window).scroll(function() {
-    if ($(this).scrollTop()) {
-        $('#toTop').fadeIn();
-    } else {
-        $('#toTop').fadeOut();
+    if($(window).scrollTop() > $("#Scrol_svg").offset().top+$("#Scrol_svg").height()){
+      $("#toTop").show();
+    }else{
+        $("#toTop").hide();
     }
 });
 
@@ -97,5 +97,16 @@ $( document ).ready( function() {
     $( "#form_input2" ).show( 100 );
     $("#button_type_1").addClass("inactive");
     $("#button_type_2").removeClass("inactive");
+  });
+});
+
+
+$(function() {
+  $(window).scroll(function() {
+      if($(window).scrollTop() < $("#Scrol_svg").offset().top+$("#Scrol_svg").height()){
+          $("#Account").show();
+      }else{
+          $("#Account").hide();
+      }
   });
 });
