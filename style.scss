@@ -640,12 +640,16 @@ body{
                     margin:0 8px;
                     margin-top: 10px;
                     box-shadow: 0 0 5px $gray_shadow;
+                    &:hover{
+                        border: 2px solid red;
+                        box-shadow: 0 1px 10px black;
+                    }
                     @media only screen and (max-width: 991px) {
                         order: 1;
                     }
                     &_img{
                         width: 100%;
-                        img{
+                        img, video{
                             width: 100%;
                             height: 190px;
                             border-radius: 25px;

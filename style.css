@@ -813,6 +813,12 @@ body section.shop .shop_cards_card {
           box-shadow: 0 0 5px #c2c2c2;
 }
 
+body section.shop .shop_cards_card:hover {
+  border: 2px solid red;
+  -webkit-box-shadow: 0 1px 10px black;
+          box-shadow: 0 1px 10px black;
+}
+
 @media only screen and (max-width: 991px) {
   body section.shop .shop_cards_card {
     -webkit-box-ordinal-group: 2;
@@ -825,7 +831,7 @@ body section.shop .shop_cards_card_img {
   width: 100%;
 }
 
-body section.shop .shop_cards_card_img img {
+body section.shop .shop_cards_card_img img, body section.shop .shop_cards_card_img video {
   width: 100%;
   height: 190px;
   border-radius: 25px;
