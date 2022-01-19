@@ -28,13 +28,13 @@
         <div class="title">
             ورود
         </div>
-        <form action="POST" >
+        <form class="form-validation-signin">
             <div class="relative">
-                <input type="text" placeholder="ایمیل یا شماره تلفن" id="Email" onclick="myFunction()">
+                <input required valid type="text" placeholder="ایمیل یا شماره تلفن" id="Email" onclick="myFunction()">
                 <svg id="EmailIcon" fill="#808080" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"/></svg>
             </div>
             <div class="relative">
-                <input type="password" placeholder="رمز عبور" id="Password">
+                <input required valid type="password" placeholder="رمز عبور" id="Password">
                  <svg id="PasswordIcon" fill="#808080" version="1.1" id="Layer_1" x="0px" y="0px"
                     viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
                         <g>
@@ -62,15 +62,15 @@
         </div>
         <form action="POST">
             <div class="relative">
-                <input type="text" placeholder="نام کاربری" id="Person" onclick="myFunction()">
+                <input required valid type="text" placeholder="نام کاربری" id="Person" onclick="myFunction()">
                 <svg id="PersonIcon" width="512px" fill="#808080"  viewBox="0 0 512 512"><path d="M332.64,64.58C313.18,43.57,286,32,256,32c-30.16,0-57.43,11.5-76.8,32.38-19.58,21.11-29.12,49.8-26.88,80.78C156.76,206.28,203.27,256,256,256s99.16-49.71,103.67-110.82C361.94,114.48,352.34,85.85,332.64,64.58Z"/><path d="M432,480H80A31,31,0,0,1,55.8,468.87c-6.5-7.77-9.12-18.38-7.18-29.11C57.06,392.94,83.4,353.61,124.8,326c36.78-24.51,83.37-38,131.2-38s94.42,13.5,131.2,38c41.4,27.6,67.74,66.93,76.18,113.75,1.94,10.73-.68,21.34-7.18,29.11A31,31,0,0,1,432,480Z"/></svg>
             </div>
             <div class="relative">
-                <input type="text" placeholder="ایمیل یا شماره تلفن" id="Email_up" onclick="myFunction()">
+                <input required valid type="text" placeholder="ایمیل یا شماره تلفن" id="Email_up" onclick="myFunction()">
                 <svg id="EmailIcon_up" fill="#808080" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.7-8 5.334L4 8.7V6.297l8 5.333 8-5.333V8.7z"/></svg>
             </div>
             <div class="relative">
-                <input type="password" placeholder="رمز عبور" id="Password_up" onclick="myFunction()">
+                <input required valid type="password" placeholder="رمز عبور" id="Password_up" onclick="myFunction()">
                <svg id="PasswordIcon_up" x="0px" y="0px" fill="#808080" viewBox="0 0 491.52 491.52" style="enable-background:new 0 0 491.52 491.52;" xml:space="preserve">
 	                <g>
 		<path d="M399.4,203.578h-19.801h-0.005v-69.744C379.593,60.039,319.556,0,245.759,0c-73.793,0-133.832,60.039-133.832,133.835
@@ -84,7 +84,7 @@
 
             </div>
             <div class="relative">
-                <input type="password" placeholder="تکرار رمز عبور" id="Password2" onclick="myFunction()">
+                <input required valid type="password" placeholder="تکرار رمز عبور" id="Password2" onclick="myFunction()">
                  <svg id="PasswordIcon2" x="0px" y="0px" fill="#808080" viewBox="0 0 491.52 491.52" style="enable-background:new 0 0 491.52 491.52;" xml:space="preserve">
 	                <g>
 		<path d="M399.4,203.578h-19.801h-0.005v-69.744C379.593,60.039,319.556,0,245.759,0c-73.793,0-133.832,60.039-133.832,133.835
@@ -97,9 +97,9 @@
                </svg>
             </div>
             <div class="checkbox">
-              <!-- <input class="" type="checkbox" value="" id="flexCheckDefault"> -->
+              <!-- <input required valid class="" type="checkbox" value="" id="flexCheckDefault"> -->
 
-              <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+              <input required valid class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
                 <label for="styled-checkbox-1"></label>
 
               <div class="text">

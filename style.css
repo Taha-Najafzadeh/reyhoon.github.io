@@ -1058,20 +1058,34 @@ body .info-section form {
 body .info-section form svg {
   position: absolute;
   right: 7px;
-  top: 27px;
+  top: 5px;
   width: 20px;
 }
 
 body .info-section form .relative {
   position: relative;
+  height: 60px;
+}
+
+body .info-section form .relative span {
+  display: block;
+  font-size: 10px;
+  color: #ff0000;
+  padding-right: 12px;
+  margin-top: 3px;
+  display: none;
 }
 
 body .info-section form input {
-  margin-top: 20px;
   border: 0;
   height: 36px;
   width: 300px;
   padding: 1px 35px 1px 5px;
+}
+
+body .info-section form input:focus {
+  border: 1px solid #d68a26;
+  background: #f6f4f5;
 }
 
 body .info-section form .checkbox {
