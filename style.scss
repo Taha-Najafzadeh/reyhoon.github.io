@@ -538,7 +538,6 @@ body{
                 color: white;
                 .row{
                     position: relative;
-                    height: 100vh;
                 }
                 
                 .logo{
@@ -644,9 +643,28 @@ body{
                     &:hover{
                         border: 2px solid red;
                         box-shadow: 0 1px 10px black;
+                        .shop_cards_card_info{
+                            display: none;
+                        }
+                        .shop_cards_card_text{
+                            display: block;
+                        }
                     }
                     @media only screen and (max-width: 991px) {
                         order: 1;
+                    }
+                    &_text{
+                        height: 110px;
+                        overflow: hidden;
+                        font-size: 14px;
+                        text-align: center;
+                        padding-top: 8px;
+                        display: none;
+                    }
+                    &_info{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                     }
                     &_img{
                         width: 100%;

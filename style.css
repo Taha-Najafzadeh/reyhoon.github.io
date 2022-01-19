@@ -661,7 +661,6 @@ body section.shop .bg_fixed {
 
 body section.shop .bg_fixed .row {
   position: relative;
-  height: 100vh;
 }
 
 body section.shop .bg_fixed .logo {
@@ -819,12 +818,42 @@ body section.shop .shop_cards_card:hover {
           box-shadow: 0 1px 10px black;
 }
 
+body section.shop .shop_cards_card:hover .shop_cards_card_info {
+  display: none;
+}
+
+body section.shop .shop_cards_card:hover .shop_cards_card_text {
+  display: block;
+}
+
 @media only screen and (max-width: 991px) {
   body section.shop .shop_cards_card {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
+}
+
+body section.shop .shop_cards_card_text {
+  height: 110px;
+  overflow: hidden;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 8px;
+  display: none;
+}
+
+body section.shop .shop_cards_card_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body section.shop .shop_cards_card_img {
