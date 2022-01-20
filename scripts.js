@@ -6,7 +6,6 @@ $('#Email').focus(function () {
 
 });
 
-
 $('#Password').focus(function () {
     $('#PasswordIcon').addClass('SvGFocusColor');
     }).blur(function () 
@@ -14,7 +13,6 @@ $('#Password').focus(function () {
     $('#PasswordIcon').removeClass('SvGFocusColor');
 
 });
-
 
 $('#Person').focus(function () {
     $('#PersonIcon').addClass('SvGFocusColor');
@@ -38,6 +36,7 @@ $('#Password_up').focus(function () {
     $('#PasswordIcon_up').removeClass('SvGFocusColor');
 
 });
+
 $('#Password2').focus(function () {
     $('#PasswordIcon2').addClass('SvGFocusColor');
     }).blur(function () 
@@ -63,6 +62,7 @@ $(window).scroll(function() {
 $("#toTop").click(function() {
     $("html, body").animate({scrollTop: 0}, 100);
  });
+
 $( document ).ready( function() {
   $( "#signin" ).click( function() {
     $( "#form2" ).fadeOut(300);
@@ -81,7 +81,6 @@ $( document ).ready( function() {
   });
 });
 
-
 $( document ).ready( function() {
   $( "#button_type_1" ).click( function() {
     $( "#form_input2" ).hide( 100 );
@@ -99,7 +98,6 @@ $( document ).ready( function() {
     $("#button_type_2").removeClass("inactive");
   });
 });
-
 
 $(function() {
   $(window).scroll(function() {
